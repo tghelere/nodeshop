@@ -1,0 +1,75 @@
+{{# each products}}
+    <div class="row">
+        {{# each this}}
+            <div class="col-md-3">
+                <div class="card">
+                    <img class="card-img-top thumb-product img-responsive" src="{{ this.imagePath }}" alt="Card image cap">
+                    <div class="card-body">
+                        <h4 class="card-title">{{ this.title }}</h4>
+                        <p class="card-text description-product">{{ this.description }}</p>
+                        <div>
+                            <div class="price-product pull-left">R${{ this.price }}</div>
+                            <a href="#" class="btn btn-success pull-right">
+                                <i class="fa fa-plus-circle" aria-hidden="true"></i> Pedido</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        {{/each}}        
+    </div>
+{{/each}}
+
+{{!-- <div class="row">
+    <div class="col-md-3">
+        <div class="card">
+            <img class="card-img-top thumb-product img-responsive" src="http://lorempixel.com/640/480" alt="Card image cap">
+            <div class="card-body">
+                <h4 class="card-title">Produto</h4>
+                <p class="card-text description-product">Descrição do produto - Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium, laborum voluptates eligendi minus unde nulla rem atque</p>
+                <div>
+                    <div class="price-product pull-left">R$ 12,00</div>
+                    <a href="#" class="btn btn-success pull-right"><i class="fa fa-plus-circle" aria-hidden="true"></i> Pedido</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card">
+            <img class="card-img-top thumb-product img-responsive" src="http://lorempixel.com/640/480" alt="Card image cap">
+            <div class="card-body">
+                <h4 class="card-title">Produto</h4>
+                <p class="card-text description-product">Descrição do produto - Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium, laborum voluptates eligendi minus unde nulla rem atque</p>
+                <div>
+                    <div class="price-product pull-left">R$ 12,00</div>
+                    <a href="#" class="btn btn-success pull-right"><i class="fa fa-plus-circle" aria-hidden="true"></i> Pedido</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card">
+            <img class="card-img-top thumb-product img-responsive" src="http://lorempixel.com/640/480" alt="Card image cap">
+            <div class="card-body">
+                <h4 class="card-title">Produto</h4>
+                <p class="card-text description-product">Descrição do produto - Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium, laborum voluptates eligendi minus unde nulla rem atque</p>
+                <div>
+                    <div class="price-product pull-left">R$ 12,00</div>
+                    <a href="#" class="btn btn-success pull-right"><i class="fa fa-plus-circle" aria-hidden="true"></i> Pedido</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card">
+            <img class="card-img-top thumb-product img-responsive" src="http://lorempixel.com/640/480" alt="Card image cap">
+            <div class="card-body">
+                <h4 class="card-title">Produto</h4>
+                <p class="card-text description-product">Descrição do produto - Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium, laborum voluptates eligendi minus unde nulla rem atque</p>
+                <div>
+                    <div class="price-product pull-left">R$ 12,00</div>
+                    <a href="#" class="btn btn-success pull-right"><i class="fa fa-plus-circle" aria-hidden="true"></i> Pedido</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> --}}
