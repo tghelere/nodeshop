@@ -3,6 +3,6 @@ body { padding-top: 5rem; }
 .dropdown-menu-right { right: 0; left: auto; }
 .hello{background-color: #ddd; text-align: center; }
 .cart{margin: 0 20px; }
-img.thumb-product{ max-height:200px; }
+img.thumb-product{ max-height:200px; padding: 2px; }
 p.description-product{ color: #7f7f7f; }
 .price-product{ font-weight:bold; line-height: 38px;}

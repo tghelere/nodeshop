@@ -5,10 +5,13 @@ const logger = require('morgan')
 const cookieParser = require('cookie-parser')
 const bodyParser = require('body-parser')
 const expressHbs = require('express-handlebars')
+const mongoose = require('mongoose')
 
 const index = require('./routes/index')
 
 const app = express()
+
+mongoose.connect('localhost:27017/nodeshop')
 
 // view engine setup
 app.engine('.hbs', expressHbs({defaultLayout: 'layout', extname: '.hbs'}))
